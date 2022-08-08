@@ -1,0 +1,23 @@
+/* O primeiro passo para começar a usar Flexbox é criar um Flex container. Elementos filhos de um Flex container
+ são chamados Flex items e são dispostos dentro dele usando as propriedades Flexbox. Algumas das propriedades
+  Flexbox são aplicadas ao container, e outras aos seus itens.
+Um Flex container é criado ao usar a propriedade display de um elemento com o valor flex: 
+
+Flex axis: Flex eixos 
+*isso pode mudar* flex-direction por padrão é row como visto abaixo
+cross(axis) start= cima para baixo = cross(axis) end
+main(axis) start= esquerda para direita = main(axis) end
+
+Os flex items são dispostos dentro de um Flex container seguindo o Main Axis. O Main Axis tem a direção definida
+ pela propriedade *flex-direction*, que pode ser horizontal, quando *flex-direction é row ou row-reverse*, e vertical, 
+ quando é *column ou column-reverse*.
+Flex lines: linhas usadas para agrupamento e alinhamento de flex itens dentro do seu respectivo container
+o q define se o flex container é *single-line* ou *multi-line* é a propriedade *flex-wrap* = define a quebra de linha e por
+padrão o flex wrap é nowrap ou seja n quebra a linha
+flex flow  é atalho para flex direction e flex wrap e por padrao o primeiro valor é direction e o segundo é wrap
+
+*/
+
+.flex-container {
+    /* display: flex; */
+  }
