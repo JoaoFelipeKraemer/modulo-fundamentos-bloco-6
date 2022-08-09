@@ -1,0 +1,73 @@
+<!-- align-self: center,baseline,stretch, flex-start.flex-end
+order: permite ordenar itens de um container, propriedade particular
+de cada item quando utilizadad fará q o flebox os exiba em ordem **crescente**
+por padrao order possui valor 0 , significa que apenas um item dentre 5,por exemplo,
+recebe a prorpriedade order:1 todos outros itens ficarão da forma q constituidos no html 
+enquanto este order 1 será posicionado após os demais, essa propriedade aceita negativos
+ou seja order:-1 viria antes dos demais pois como dito acima order tras os itens em ordem crescente  -->
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX - ORDER</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        display: flex;
+        height: 50px;
+        margin: auto;
+        width: 500px;
+      }
+
+      .box {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 125px;
+      }
+
+      .one {
+        background-color: #FBD26A;
+        display: flex;
+        /* Altere a propriedade order. */
+        order: 2;
+        list-style: none;
+      }
+
+      .two {
+        background-color: #FAA488;
+        display: flex;
+        /* Altere a propriedade order. */
+        order: 1;
+        list-style: none;
+      }
+
+      .three {
+        background-color: #9069EF;
+        display: flex;
+        /* Altere a propriedade order. */
+        order: 4;
+        list-style: none;
+      }
+
+      .four {
+        background-color: #006472;
+        display: flex;
+        /* Altere a propriedade order. */
+        order: 3;
+        list-style: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul class="container">
+      <li class="box one">1</li>
+      <li class="box two">2</li>
+      <li class="box three">3</li>
+      <li class="box four">4</li>
+    </ul>
+  </body>
+</html>
